@@ -1,0 +1,381 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Social Book</title>
+    <link rel="icon" href="img/logo.png" type="image/x-icon">
+    <link rel="stylesheet" href="css/main.css">
+
+
+</head>
+
+<body>
+    <header>
+        <nav>
+            <div class="nav-left">
+                <img src="img/logo.png" class="logo">
+                <p>Social Meet</p>
+                <ul>
+                    <li>
+                        <ion-icon name="notifications"></ion-icon>
+                    </li>
+                    <li>
+                        <ion-icon name="mail"></ion-icon>
+                    </li>
+                    <li>
+                        <ion-icon name="play"></ion-icon>
+                    </li>
+
+                </ul>
+            </div>
+
+
+            <div class="nav-right">
+                <div class="search-box">
+                    <ion-icon name="search-outline"></ion-icon>
+                    <input type="text" placeholder="Search...">
+                </div>
+
+                <div class="nav-user-icon online" onclick="settingsMenuToggle()">
+                    <img src="img/profile.png">
+                </div>
+            </div>
+
+            <!-- --------settings-menu--------------->
+
+            <div class="settings-menu">
+
+                <div id="dark-btn">
+                    <span></span>
+                </div>
+
+                <div class="inner-settings">
+                    <div class="user-profile">
+                        <img src="img/profile.png">
+                        <div>
+                            <p>Frank Henderson</p>
+                            <a href="#">See your Profile</a>
+                        </div>
+                    </div>
+                    <hr>
+                    <div class="user-profile">
+                        <img src="img/usa.png">
+                        <div>
+                            <p>Give Feedback</p>
+                            <a href="#">Help us to Improve the new design</a>
+                        </div>
+                    </div>
+                    <hr>
+
+                    <div class="setting-link">
+                        <ion-icon name="settings" class="settings-icon"></ion-icon>
+                        <a href="#">Settings & Privacy <ion-icon name="chevron-forward"></ion-icon></a>
+                    </div>
+
+                    <div class="setting-link">
+                        <ion-icon name="help-circle" class="settings-icon"></ion-icon>
+                        <a href="#">Help & Support <ion-icon name="chevron-forward"></ion-icon></a>
+                    </div>
+
+                    <div class="setting-link">
+                        <ion-icon name="moon" class="settings-icon"></ion-icon>
+                        <a href="#">Display & Accessibility <ion-icon name="chevron-forward"></ion-icon></a>
+                    </div>
+                    <div class="setting-link">
+                        <ion-icon name="log-out" class="settings-icon"></ion-icon>
+                        <a href="#">Logout<ion-icon name="chevron-forward"></ion-icon></a>
+                    </div>
+                </div>
+
+            </div>
+        </nav>
+    </header>
+
+    <div class="container">
+        <!-- --------left-sidebar-------------- -->
+
+        <div class="left-sidebar">
+            <div class="imp-links">
+                <a href="#"><ion-icon name="newspaper"></ion-icon>Latest News</a>
+                <a href=""><ion-icon name="person-add"></ion-icon>Add Friends</a>
+                <a href="#"><ion-icon name="people-circle"> </ion-icon>Group</a>
+                <a href="#"><ion-icon name="cart"> </ion-icon>Marketplace</a>
+                <a href="#"><ion-icon name="play"></ion-icon>Watch</a>
+                <a href="#">See More</a>
+            </div>
+
+            <div class="shortcut-links">
+                <p>Your Shortcuts</p>
+                <a href="#"><img src="img/Web-dev.png"> Web developer</a>
+                <a href="#"><img src="img/Web-dev-2.png"> Web design course</a>
+                <a href="#"><img src="img/Web-dev-3.png"> Full stack development</a>
+            </div>
+        </div>
+
+        <!-- --------main-cintent-------------- -->
+
+        <div class="main-content">
+
+            <div class="story-gallery">
+                <div class="story story-1">
+                    <ion-icon name="add-circle"></ion-icon>
+                    <p>Post Story</p>
+                </div>
+                <div class="story story-2">
+                    <img src="img/alex.png" alt="">
+                    <p> Podrick Alex</p>
+                </div>
+                <div class="story story-3">
+                    <img src="img/john.png" alt="">
+                    <p>Elias John</p>
+                </div>
+                <div class="story story-4">
+                    <img src="img/together.jpg" alt="">
+                    <p>Pete Steve</p>
+                </div>
+                <div class="story story-5">
+                    <img src="img/joy.png" alt="">
+                    <p>Joyce Palmer</p>
+                </div>
+            </div>
+
+            <div class="write-post">
+                <div class="user-profile">
+                    <img src="img/profile.png">
+                    <div>
+                        <p>Frank Henderson</p>
+                        <small>Public <ion-icon name="caret-down"></ion-icon></small>
+                    </div>
+                </div>
+
+                <div class="post-input">
+                    <textarea rows="3" placeholder="what's on your  mind, Frank?"></textarea>
+
+                    <div class="add-post-link">
+                        <a href="#"><ion-icon class="red" name="Videocam"></ion-icon>Live Video</a>
+                        <a href="#"><ion-icon class="green" name="camera"></ion-icon>photos/Video</a>
+                        <a href="#"><ion-icon class="yellow" name="happy"></ion-icon>Feeling/Activity</a>
+                    </div>
+
+                </div>
+            </div>
+
+            <div class="post-container">
+                <div class="post-row">
+                    <div class="user-profile">
+                        <img src="img/profile.png">
+                        <div>
+                            <p>Frank Henderson</p>
+                            <span>September 13 2024 1:56 am </span>
+                        </div>
+                    </div>
+                    <a href="#"><ion-icon name="ellipsis-vertical"></ion-icon></a>
+                </div>
+
+                <p class="post-text">Subscribe <span> @hycienth Paul</span> Youtube Channel to Watch more videos on
+                    website development and UI designs. <a href="#">#hycienthpaul</a><a href="#">YoutubeChannel</a></p>
+
+                <img src="img/alone.jpg" class="post-img">
+
+                <div class="post-row">
+
+                    <div class="activity-icon">
+                        <div><ion-icon class="blue" name="thumbs-up"></ion-icon> 440k</div>
+                        <div><ion-icon name="chatbubble"></ion-icon> 40k</div>
+                        <div><ion-icon name="arrow-redo"></ion-icon> 150k</div>
+                    </div>
+
+
+                    <div class="profile-icon">
+                        <img src="img/alex.png" alt=""> <ion-icon name="caret-down"></ion-icon>
+                    </div>
+                </div>
+            </div>
+
+
+            <div class="post-container">
+                <div class="post-row">
+                    <div class="user-profile">
+                        <img src="img/john.png">
+                        <div>
+                            <p>Elias John</p>
+                            <span>September 13 2024 1:56 am </span>
+                        </div>
+                    </div>
+                    <a href="#"><ion-icon name="ellipsis-vertical"></ion-icon></a>
+                </div>
+
+                <p class="post-text">Subscribe, like and share this post with friends, family and groups <span>
+                        @hycienth Paul</span> Youtube Channel to Watch more videos on
+                    website development and UI designs. Ask your doubt in the comments section and i will reply you <a
+                        href="#">#hycienthpaul</a><a href="#">YoutubeChannel</a></p>
+
+                <img src="img/together.jpg" class="post-img">
+
+                <div class="post-row">
+
+                    <div class="activity-icon">
+                        <div><ion-icon class="blue" name="thumbs-up"></ion-icon> 440k</div>
+                        <div><ion-icon name="chatbubble"></ion-icon> 40k</div>
+                        <div><ion-icon name="arrow-redo"></ion-icon> 150k</div>
+                    </div>
+
+
+                    <div class="profile-icon">
+                        <img src="img/john.png" alt=""> <ion-icon name="caret-down"></ion-icon>
+                    </div>
+                </div>
+            </div>
+
+            <div class="post-container">
+                <div class="post-row">
+                    <div class="user-profile">
+                        <img src="img/photographer.jpg">
+                        <div>
+                            <p>Elias John</p>
+                            <span>September 13 2024 1:56 am </span>
+                        </div>
+                    </div>
+                    <a href="#"><ion-icon name="ellipsis-vertical"></ion-icon></a>
+                </div>
+
+                <p class="post-text">Subscribe, like and share this post with friends, family and groups <span>
+                        @hycienth Paul</span> Youtube Channel to Watch more videos on
+                    website development and UI designs. Ask your doubt in the comments section and i will reply you <a
+                        href="#">#hycienthpaul</a><a href="#">YoutubeChannel</a></p>
+
+                <img src="img/photographer.jpg" class="post-img">
+
+                <div class="post-row">
+
+                    <div class="activity-icon">
+                        <div><ion-icon class="blue" name="thumbs-up"></ion-icon> 440k</div>
+                        <div><ion-icon name="chatbubble"></ion-icon> 40k</div>
+                        <div><ion-icon name="arrow-redo"></ion-icon> 150k</div>
+                    </div>
+
+
+                    <div class="profile-icon">
+                        <img src="img/photographer.jpg" alt=""> <ion-icon name="caret-down"></ion-icon>
+                    </div>
+                </div>
+            </div>
+
+            <div class="post-container">
+                <div class="post-row">
+                    <div class="user-profile">
+                        <img src="img/passport.webp">
+                        <div>
+                            <p>Elias John</p>
+                            <span>September 13 2024 1:56 am </span>
+                        </div>
+                    </div>
+                    <a href="#"><ion-icon name="ellipsis-vertical"></ion-icon></a>
+                </div>
+
+                <p class="post-text">Subscribe, like and share this post with friends, family and groups <span>
+                        @hycienth Paul</span> Youtube Channel to Watch more videos on
+                    website development and UI designs. Ask your doubt in the comments section and i will reply you <a
+                        href="#">#hycienthpaul</a><a href="#">YoutubeChannel</a></p>
+
+                <img src="img/passport.webp" class="post-img">
+
+                <div class="post-row">
+
+                    <div class="activity-icon">
+                        <div><ion-icon class="blue" name="thumbs-up"></ion-icon> 440k</div>
+                        <div><ion-icon name="chatbubble"></ion-icon> 40k</div>
+                        <div><ion-icon name="arrow-redo"></ion-icon> 150k</div>
+                    </div>
+
+
+                    <div class="profile-icon">
+                        <img src="img/passport.webp" alt=""> <ion-icon name="caret-down"></ion-icon>
+                    </div>
+                </div>
+            </div>
+
+
+            <button type="button" class="load-more">Load More</button>
+        </div>
+
+        <!-- --------right-sidebar-------------- -->
+
+        <div class="right-sidebar">
+
+            <div class="sidebar-title">
+                <h4>Events</h4>
+                <a href="#">See All</a>
+            </div>
+
+            <div class="event">
+                <div class="left-event">
+                    <h3>18</h3>
+                    <span>September</span>
+                </div>
+                <div class="right-event">
+                    <h4>Social media</h4>
+                    <p><ion-icon name="location"></ion-icon>Eko Atlantic</p>
+                    <a href="#"> More info</a>
+                </div>
+            </div>
+
+            <div class="event">
+                <div class="left-event">
+                    <h3>22</h3>
+                    <span>September</span>
+                </div>
+                <div class="right-event">
+                    <h4>Mobie Marketting</h4>
+                    <p><ion-icon name="location"></ion-icon>Eko Atlantic</p>
+                    <a href="#"> More info</a>
+                </div>
+            </div>
+            <div class="sidebar-title">
+                <h4>Advertisement</h4>
+                <a href="#">Close</a>
+            </div>
+            <img src="img/advert.jpeg" class="sidebar-ads">
+
+            <div class="sidebar-title">
+                <h4>Conversation</h4>
+                <a href="#">Hide chat</a>
+            </div>
+
+            <div class="online-list">
+                <div class="online">
+                    <img src="img/alex.png">
+                </div>
+                <p>Podrick Alex</p>
+            </div>
+
+            <div class="online-list">
+                <div class="online">
+                    <img src="img/joy.png">
+                </div>
+                <p>Joyce Alison</p>
+            </div>
+
+            <div class="online-list">
+                <div class="online">
+                    <img src="img/john.png">
+                </div>
+                <p> Elias John</p>
+            </div>
+
+        </div>
+    </div>
+
+    <div class="footer">
+        <p>Copyright 2024 - Hycienth Paul</p>
+    </div>
+
+    <script type="module" src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.esm.js"></script>
+    <script nomodule src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.js"></script>
+
+    <script src="script.js"></script>
+</body>
+
+</html>
